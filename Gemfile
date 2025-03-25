@@ -51,3 +51,6 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 end
+
+# A productive library for Classic Rails, React and Redux [https://github.com/thoughtbot/superglue]
+gem "superglue", "~> 1.1"
