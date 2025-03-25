@@ -54,3 +54,6 @@ end
 
 # A productive library for Classic Rails, React and Redux [https://github.com/thoughtbot/superglue]
 gem "superglue", "~> 1.1"
+
+# Utility-first CSS framework [https://github.com/rails/tailwindcss-rails]
+gem "tailwindcss-rails", "~> 4.2"
