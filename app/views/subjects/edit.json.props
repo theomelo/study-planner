@@ -1,0 +1,9 @@
+if @subject.errors.any?
+  flash.now["subjectFormErrors"] = @subject.errors.as_json
+end
+
+json.subjectForm(partial: 'form') do
+end
+
+json.subjectPath subject_path(@subject)
+json.subjectsPath subjects_path

@@ -1,0 +1,15 @@
+json.subjects do
+  json.array! @subjects do |subject|
+    json.id subject.id
+    json.title subject.title
+    json.createdAt subject.created_at
+    json.updatedAt subject.updated_at
+    json.editSubjectPath edit_subject_path(subject)
+    json.subjectPath subject_path(subject)
+    json.deleteForm do
+      form_props(model: subject, method: :delete)
+    end
+  end
+end
+
+json.newSubjectPath new_subject_path

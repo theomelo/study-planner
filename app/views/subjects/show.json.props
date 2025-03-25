@@ -1,0 +1,7 @@
+json.id @subject.id
+json.title @subject.title
+json.createdAt @subject.created_at
+json.updatedAt @subject.updated_at
+
+json.subjectsPath subjects_path
+json.editSubjectPath edit_subject_path(@subject)

@@ -1,3 +1,7 @@
+import SubjectsNew from '@views/subjects/new'
+import SubjectsShow from '@views/subjects/show'
+import SubjectsEdit from '@views/subjects/edit'
+import SubjectsIndex from '@views/subjects/index'
 // import your page component #todo fix output of new lines
 // e.g import PostsEdit from '../views/posts/edit'
 
@@ -29,6 +33,10 @@
 // ```
 //
 const pageIdentifierToPageComponent = {
+  'subjects/new': SubjectsNew,
+  'subjects/show': SubjectsShow,
+  'subjects/edit': SubjectsEdit,
+  'subjects/index': SubjectsIndex,
 };
 
 export { pageIdentifierToPageComponent }

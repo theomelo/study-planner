@@ -1,0 +1,4 @@
+form_props(model: @subject) do |f|
+  f.text_field(:title)
+  f.submit
+end
