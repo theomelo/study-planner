@@ -1,6 +1,7 @@
 import React from 'react'
-import { 
-  Form, 
+import {
+  Button,
+  Form,
   FormProps,
   Layout,
   TextField,
@@ -24,10 +25,10 @@ export default function SubjectsNew() {
     subjectForm,
     subjectsPath,
   } = useContent<ContentProps>()
-  const { 
-    inputs, 
-    form, 
-    extras 
+  const {
+    inputs,
+    form,
+    extras
   } = subjectForm
   const validationErrors = useAppSelector((state) => state.flash["subjectFormErrors"])
 
@@ -38,7 +39,9 @@ export default function SubjectsNew() {
         <SubmitButton {...inputs.submit} type="submit"> {inputs.submit.text} </SubmitButton>
       </Form>
 
-      <a href={subjectsPath} data-sg-visit>Back</a>
+      <Button asChild variant="secondary">
+        <a href={subjectsPath} data-sg-visit>Back</a>
+      </Button>
     </Layout>
   )
 }

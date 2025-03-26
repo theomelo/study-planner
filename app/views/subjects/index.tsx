@@ -1,6 +1,7 @@
 import React from 'react'
-import { Form, FormProps, Layout } from '@javascript/components'
+import { Form, FormProps, Layout, Button } from '@javascript/components'
 import { useContent } from '@thoughtbot/superglue'
+
 
 type ContentProps = {
   newSubjectPath: string
@@ -35,8 +36,8 @@ export default function SubjectsIndex() {
     return (
       <tr key={id}>
         <td>{title}</td>
-        <td><a href={ subjectPath } data-sg-visit>Show</a></td>
-        <td><a href={ editSubjectPath } data-sg-visit>Edit</a></td>
+        <td><a href={subjectPath} data-sg-visit>Show</a></td>
+        <td><a href={editSubjectPath} data-sg-visit>Edit</a></td>
         <td>
           <Form {...form} extras={extras} data-sg-visit>
             <button type="submit">Delete</button>
@@ -63,7 +64,9 @@ export default function SubjectsIndex() {
         </tbody>
       </table>
       <br />
-      <a href={newSubjectPath} data-sg-visit>New Subject</a>
+      <Button asChild>
+        <a href={newSubjectPath} data-sg-visit>New Subject</a>
+      </Button>
     </Layout>
   )
 }
