@@ -56,4 +56,4 @@ end
 gem "superglue", "~> 1.1"
 
 # Utility-first CSS framework [https://github.com/rails/tailwindcss-rails]
-gem "tailwindcss-rails", "~> 4.2"
+gem "tailwindcss-rails", "~> 4.3"
